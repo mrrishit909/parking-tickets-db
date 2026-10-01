@@ -1,0 +1,15 @@
+column,value,rows,action
+violation_precinct,,6722051,"outside 1-123 (mostly 0, camera tickets): set to NULL"
+vehicle_year,,2911948,outside 1900-2027 (mostly 0): set to NULL
+issue_date,,410883,outside fiscal year 2026: moved to ticket_quarantine with a reason
+violation_county,(blank),397949,unknown borough: set to NULL
+violation_time,,7500,not hhmm + A/P: set to NULL
+violation_code,0,1052,not in the DOF code table: set to NULL
+violation_county,O,502,unknown borough: set to NULL
+violation_code,95,233,not in the DOF code table: set to NULL
+violation_code,94,138,not in the DOF code table: set to NULL
+violation_county,QNS,6,unknown borough: set to NULL
+violation_county,NYPAS,1,unknown borough: set to NULL
+violation_county,NT,1,unknown borough: set to NULL
+violation_county,106,1,unknown borough: set to NULL
+violation_county,q,1,unknown borough: set to NULL

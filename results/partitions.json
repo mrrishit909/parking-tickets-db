@@ -1,0 +1,62 @@
+[
+  {
+    "partition": "ticket_2025_07",
+    "rows": 1464814,
+    "mb": 260
+  },
+  {
+    "partition": "ticket_2025_08",
+    "rows": 1361420,
+    "mb": 242
+  },
+  {
+    "partition": "ticket_2025_09",
+    "rows": 1288424,
+    "mb": 228
+  },
+  {
+    "partition": "ticket_2025_10",
+    "rows": 1402653,
+    "mb": 247
+  },
+  {
+    "partition": "ticket_2025_11",
+    "rows": 1359300,
+    "mb": 239
+  },
+  {
+    "partition": "ticket_2025_12",
+    "rows": 1081647,
+    "mb": 191
+  },
+  {
+    "partition": "ticket_2026_01",
+    "rows": 1090486,
+    "mb": 192
+  },
+  {
+    "partition": "ticket_2026_02",
+    "rows": 948206,
+    "mb": 166
+  },
+  {
+    "partition": "ticket_2026_03",
+    "rows": 1448363,
+    "mb": 254
+  },
+  {
+    "partition": "ticket_2026_04",
+    "rows": 1395552,
+    "mb": 245
+  },
+  {
+    "partition": "ticket_2026_05",
+    "rows": 1354442,
+    "mb": 238
+  },
+  {
+    "partition": "ticket_2026_06",
+    "rows": 1083558,
+    "mb": 190
+  }
+]

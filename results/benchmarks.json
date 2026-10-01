@@ -1,0 +1,183 @@
+{
+  "copy": {
+    "rows": 15689748,
+    "seconds": 14.4,
+    "rows_per_second": 1089566
+  },
+  "insert_vs_copy_200k_rows": {
+    "insert_seconds": 3.8,
+    "copy_seconds": 0.18,
+    "copy_times_faster": 21.4
+  },
+  "transform_seconds": 152.7,
+  "index_build_seconds": 11.1,
+  "pruning": {
+    "partitioned": {
+      "ms": 5.018,
+      "relations_scanned": [
+        "ticket_2026_03"
+      ],
+      "workers": 0,
+      "scan_types": [
+        "Bitmap Heap Scan",
+        "Bitmap Index Scan"
+      ]
+    },
+    "unpartitioned_no_index": {
+      "ms": 183.813,
+      "relations_scanned": [
+        "ticket_flat"
+      ],
+      "workers": 2,
+      "scan_types": [
+        "Seq Scan"
+      ]
+    }
+  },
+  "brin_vs_btree": {
+    "no_index": {
+      "ms": 185.865,
+      "relations_scanned": [
+        "ticket_flat"
+      ],
+      "workers": 2,
+      "scan_types": [
+        "Seq Scan"
+      ]
+    },
+    "btree_build_ms": 1830.4470000000001,
+    "btree_mb": 106.1,
+    "btree": {
+      "ms": 8.069,
+      "relations_scanned": [
+        "ticket_flat"
+      ],
+      "workers": 2,
+      "scan_types": [
+        "Index Only Scan"
+      ]
+    },
+    "brin_build_ms": 464.516,
+    "brin_mb": 0.082,
+    "brin": {
+      "ms": 38.566,
+      "relations_scanned": [
+        "ticket_flat"
+      ],
+      "workers": 2,
+      "scan_types": [
+        "Bitmap Heap Scan",
+        "Bitmap Index Scan"
+      ]
+    }
+  },
+  "retention_one_month": {
+    "delete_ms": 872,
+    "dead_rows_left_by_delete": 1464814,
+    "vacuum_ms": 60,
+    "table_mb_before": 1656,
+    "table_mb_after_delete_and_vacuum": 1655,
+    "detach_partition_ms": 4.4,
+    "reattach_partition_ms": 157.9
+  },
+  "parallel": {
+    "0_workers": {
+      "ms": 1880.652,
+      "relations_scanned": [
+        "ticket_2025_07",
+        "ticket_2025_08",
+        "ticket_2025_09",
+        "ticket_2025_10",
+        "ticket_2025_11",
+        "ticket_2025_12",
+        "ticket_2026_01",
+        "ticket_2026_02",
+        "ticket_2026_03",
+        "ticket_2026_04",
+        "ticket_2026_05",
+        "ticket_2026_06"
+      ],
+      "workers": 0,
+      "scan_types": [
+        "Index Only Scan"
+      ]
+    },
+    "2_workers": {
+      "ms": 850.712,
+      "relations_scanned": [
+        "ticket_2025_07",
+        "ticket_2025_08",
+        "ticket_2025_09",
+        "ticket_2025_10",
+        "ticket_2025_11",
+        "ticket_2025_12",
+        "ticket_2026_01",
+        "ticket_2026_02",
+        "ticket_2026_03",
+        "ticket_2026_04",
+        "ticket_2026_05",
+        "ticket_2026_06"
+      ],
+      "workers": 2,
+      "scan_types": [
+        "Index Only Scan"
+      ]
+    },
+    "4_workers": {
+      "ms": 431.926,
+      "relations_scanned": [
+        "ticket_2025_07",
+        "ticket_2025_08",
+        "ticket_2025_09",
+        "ticket_2025_10",
+        "ticket_2025_11",
+        "ticket_2025_12",
+        "ticket_2026_01",
+        "ticket_2026_02",
+        "ticket_2026_03",
+        "ticket_2026_04",
+        "ticket_2026_05",
+        "ticket_2026_06"
+      ],
+      "workers": 4,
+      "scan_types": [
+        "Index Only Scan"
+      ]
+    }
+  },
+  "dashboard": {
+    "base_table": {
+      "ms": 2293.317,
+      "relations_scanned": [
+        "ticket_2025_07",
+        "ticket_2025_08",
+        "ticket_2025_09",
+        "ticket_2025_10",
+        "ticket_2025_11",
+        "ticket_2025_12",
+        "ticket_2026_01",
+        "ticket_2026_02",
+        "ticket_2026_03",
+        "ticket_2026_04",
+        "ticket_2026_05",
+        "ticket_2026_06",
+        "violation_code"
+      ],
+      "workers": 2,
+      "scan_types": [
+        "Seq Scan"
+      ]
+    },
+    "materialized_view": {
+      "ms": 29.419,
+      "relations_scanned": [
+        "mv_daily"
+      ],
+      "workers": 0,
+      "scan_types": [
+        "Seq Scan"
+      ]
+    },
+    "refresh_concurrently_ms": 2835
+  }
+}

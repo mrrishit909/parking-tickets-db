@@ -1,0 +1,75 @@
+{
+  "files": [
+    {
+      "file": "tickets_2025-07.csv",
+      "rows": 1464814,
+      "copy_seconds": 1.4
+    },
+    {
+      "file": "tickets_2025-08.csv",
+      "rows": 1361420,
+      "copy_seconds": 1.2
+    },
+    {
+      "file": "tickets_2025-09.csv",
+      "rows": 1288424,
+      "copy_seconds": 1.1
+    },
+    {
+      "file": "tickets_2025-10.csv",
+      "rows": 1402653,
+      "copy_seconds": 1.2
+    },
+    {
+      "file": "tickets_2025-11.csv",
+      "rows": 1359300,
+      "copy_seconds": 1.3
+    },
+    {
+      "file": "tickets_2025-12.csv",
+      "rows": 1081647,
+      "copy_seconds": 1.0
+    },
+    {
+      "file": "tickets_2026-01.csv",
+      "rows": 1090486,
+      "copy_seconds": 1.0
+    },
+    {
+      "file": "tickets_2026-02.csv",
+      "rows": 948206,
+      "copy_seconds": 0.9
+    },
+    {
+      "file": "tickets_2026-03.csv",
+      "rows": 1448363,
+      "copy_seconds": 1.4
+    },
+    {
+      "file": "tickets_2026-04.csv",
+      "rows": 1395552,
+      "copy_seconds": 1.3
+    },
+    {
+      "file": "tickets_2026-05.csv",
+      "rows": 1354442,
+      "copy_seconds": 1.2
+    },
+    {
+      "file": "tickets_2026-06.csv",
+      "rows": 1083558,
+      "copy_seconds": 1.0
+    },
+    {
+      "file": "tickets_outside_fy.csv",
+      "rows": 410883,
+      "copy_seconds": 0.4
+    }
+  ],
+  "counts": {
+    "staged": 15689748,
+    "loaded": 15278865,
+    "quarantined": 410883,
+    "database_mb": 6365
+  }
+}
